@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Teknolojileri Projesi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Proje Ödevi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<main class="container my-5">
+    <h1 class="text-center mb-4">Sultan Şehir: Sivas</h1>
+
+    <!-- 1. Slider Bölümü (En az 4 resim) -->
+    <div id="sivasSlider" class="carousel slide shadow-lg mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#sivasSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#sivasSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#sivasSlider" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#sivasSlider" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <!-- img/1.jpg şeklinde isimleri kendine göre düzenle -->
+                <img src="img/gokmedrese.jpg" class="d-block w-100" alt="Gök Medrese" style="height: 450px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gök Medrese</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/cifteminare.jpg" class="d-block w-100" alt="Çifte Minare" style="height: 450px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Çifte Minareli Medrese</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/divrigi.jpg" class="d-block w-100" alt="Divriği Ulu Camii" style="height: 450px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Divriği Ulu Camii</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/meydan.jpg" class="d-block w-100" alt="Sivas Meydan" style="height: 450px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sivas Kent Meydanı</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#sivasSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#sivasSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- 2. Şehir Bilgileri ve Gezilecek Yerler -->
+    <div class="row">
+        <div class="col-md-7">
+            <h3>Sivas Hakkında</h3>
+            <p>İç Anadolu'nun en eski ve en önemli yerleşim merkezlerinden biri olan Sivas, Selçuklu devleti döneminde önemli bir kültür merkezi olmuştur. Milli Mücadele döneminde ise Sivas Kongresi'ne ev sahipliği yaparak Cumhuriyet'in temellerinin atıldığı şehir unvanını almıştır.</p>
+            <p><strong>Nüfus:</strong> 650.401 (2023)</p>
+        </div>
+        <div class="col-md-5">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Popüler Gezilecek Yerler</h5>
+                    <ul class="list-group list-group-flush bg-transparent">
+                        <li class="list-group-item bg-transparent">📍 Divriği Ulu Camii ve Darüşşifası</li>
+                        <li class="list-group-item bg-transparent">📍 Çifte Minareli Medrese</li>
+                        <li class="list-group-item bg-transparent">📍 Gök Medrese</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

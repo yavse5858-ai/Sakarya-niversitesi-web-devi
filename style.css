@@ -1,0 +1,12 @@
+/* Slider resimlerinin boyutunu sabitlemek için */
+.carousel-item img {
+    height: 500px; /* Tüm resimler aynı yükseklikte olsun */
+    object-fit: cover; /* Resimler bozulmadan alanı kaplasın */
+}
+
+/* Şehir bilgileri başlığı için ufak bir stil */
+h1.text-center {
+    color: #2c3e50;
+    margin-top: 30px;
+    font-weight: bold;
+}
