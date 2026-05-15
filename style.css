@@ -1,12 +1,135 @@
-/* Slider resimlerinin boyutunu sabitlemek için */
-.carousel-item img {
-    height: 500px; /* Tüm resimler aynı yükseklikte olsun */
-    object-fit: cover; /* Resimler bozulmadan alanı kaplasın */
+/* 1. GENEL SAYFA AYARLARI */
+body {
+    background-color: #1a1a1a !important; /* Tüm sitenin arka planı koyu gri/siyah */
+    color: #ffffff !important;           /* Varsayılan yazı rengi beyaz */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Şehir bilgileri başlığı için ufak bir stil */
-h1.text-center {
-    color: #2c3e50;
-    margin-top: 30px;
+/* 2. MODERN NAVBAR (CAM EFEKTİ) */
+.navbar {
+    background: rgba(37, 37, 37, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #ffc107 !important;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: #ffc107 !important;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Giriş Yap Butonu */
+.login-btn {
+    background-color: #ffc107 !important;
+    color: #000 !important;
     font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 25px !important;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #e0a800 !important;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+}
+
+/* 3. KUTU VE KART YAPILARI (Özgeçmiş, Mirasımız, İletişim Formu) */
+.cv-card, .card, .miras-detay-box, .form-container, .bg-light, .bg-white {
+    background-color: #252525 !important;
+    border: 1px solid rgba(255, 193, 7, 0.3) !important;
+    border-radius: 15px;
+    color: #ffffff !important;
+    padding: 25px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+}
+
+/* Kutuların üzerine gelince hafif parlama efekti */
+.miras-detay-box:hover, .cv-card:hover {
+    border-color: #ffc107 !important;
+    background-color: #2d2d2d !important;
+}
+
+/* 4. YAZI VE BAŞLIK RENKLERİ */
+h1, h2, h3, h4, .section-title {
+    color: #ffc107 !important;
+    margin-bottom: 20px;
+}
+
+.text-muted, .text-secondary, p.text-muted {
+    color: #aaaaaa !important;
+}
+
+/* 5. FORM ELEMANLARI (İletişim Sayfası İçin) */
+label, .form-label {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
+
+.form-control, .form-select {
+    background-color: #1a1a1a !important;
+    border: 1px solid #444 !important;
+    color: #ffffff !important;
+}
+
+.form-control:focus {
+    border-color: #ffc107 !important;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.2) !important;
+}
+
+/* 6. YETENEK BARLARI (Özgeçmiş Sayfası) */
+.progress {
+    height: 10px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background-color: #ffc107;
+}
+
+/* 7. İLGİ ALANLARI İKONLARI */
+.interest-item {
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #444;
+}
+
+/* Gezilecek Yerler Listesi Düzenlemesi */
+.list-group-item {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    padding: 12px 15px;
+}
+
+/* Listedeki linkler veya ikonlar için sarı renk */
+.list-group-item i, .list-group-item span {
+    color: #ffc107 !important; 
+    margin-right: 10px;
+}
+
+/* Listenin başlığı için */
+.card-header, h5.card-title {
+    color: #ffc107 !important;
+    border-bottom: 1px solid #ffc107 !important;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }

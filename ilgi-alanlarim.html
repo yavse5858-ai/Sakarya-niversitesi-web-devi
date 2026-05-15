@@ -10,27 +10,64 @@
 </head>
 <body>
 
-    <!-- Navigasyon Menüsü -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Proje Ödevi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Hakkında</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
-                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-2" href="login.html">Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<style>
+    .navbar {
+        background: rgba(37, 37, 37, 0.95) !important;
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid #ffc107;
+        padding: 15px 0;
+    }
+    .navbar-brand {
+        font-weight: 800;
+        color: #ffc107 !important;
+        letter-spacing: 1px;
+    }
+    .nav-link {
+        color: #ffffff !important;
+        font-weight: 500;
+        margin: 0 10px;
+        transition: 0.3s;
+    }
+    .nav-link:hover {
+        color: #ffc107 !important;
+        transform: translateY(-2px);
+    }
+    .nav-link.active {
+        color: #ffc107 !important;
+        border-bottom: 2px solid #ffc107;
+    }
+    .login-btn {
+        background-color: #ffc107;
+        color: #000 !important;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 8px 25px !important;
+    }
+    .login-btn:hover {
+        background-color: #e0a800;
+        box-shadow: 0 0 15px rgba(255, 193, 7, 0.4);
+    }
+</style>
 
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">YAVUZ PROJE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+                <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link login-btn ms-lg-3" href="login.html">Giriş Yap</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <main class="container my-5">
     <div class="text-center mb-5">
         <h2 class="fw-bold">İlgi Alanlarım: Sinema Portalı</h2>

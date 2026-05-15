@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgeçmiş - Yavuz Selim Doğan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { background-color: #1a1a1a; color: #fff; }
+        .cv-card { background: #252525; border-radius: 15px; padding: 30px; margin-bottom: 20px; border: 1px solid #333; }
+        .profile-img { width: 180px; height: 180px; object-fit: cover; border: 4px solid #ffc107; }
+        .skill-name { font-weight: bold; color: #ffc107; }
+        .progress { height: 10px; background-color: #444; }
+        .progress-bar { background-color: #ffc107; }
+        .interest-item { background: #333; padding: 10px 20px; border-radius: 50px; display: inline-block; margin: 5px; }
+        .section-title { border-left: 5px solid #ffc107; padding-left: 15px; margin-bottom: 25px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">YAVUZ PROJE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hakkımda</a></li>
+                <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                <li class="nav-item"><a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link login-btn ms-lg-3" href="login.html">Giriş Yap</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="cv-card text-center">
+                    <img src="img/profil.jpg" class="rounded-circle profile-img mb-3" alt="Yavuz Selim Doğan">
+                    <h2 class="fw-bold">Yavuz Selim Doğan</h2>
+                    <p class="text-warning">Bilgisayar Mühendisi Adayı</p>
+                    <hr class="bg-secondary">
+                    <div class="text-start">
+                        <p><i class="fas fa-envelope me-2 text-warning"></i> yavuz.dogan@sakarya.edu.tr</p>
+                        <p><i class="fas fa-map-marker-alt me-2 text-warning"></i> Sakarya, Türkiye</p>
+                        <p><i class="fas fa-university me-2 text-warning"></i> Sakarya Üniversitesi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="cv-card">
+                    <h4 class="section-title">Profil / Özet</h4>
+                    <p class="text-secondary">
+                        Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde eğitimime devam etmekteyim. 
+                        Yazılım geliştirme süreçlerine duyduğum merakla kendimi HTML, CSS ve çeşitli programlama 
+                        dillerinde geliştiriyorum. Öğrenmeye açık ve çözüm odaklı bir mühendis adayıyım.
+                    </p>
+                </div>
+
+                <div class="cv-card">
+                    <h4 class="section-title">Eğitim</h4>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-graduation-cap fa-2x text-warning me-3"></i>
+                        <div>
+                            <h5 class="mb-0">Sakarya Üniversitesi</h5>
+                            <p class="mb-0">Bilgisayar Mühendisliği (Lisans)</p>
+                            <small class="text-muted">2025 - Devam Ediyor</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-card">
+                    <h4 class="section-title">Yetenekler</h4>
+                    
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name">HTML / CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name">Java</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress"><div class="progress-bar" style="width: 60%"></div></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="skill-name">C++ / C#</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+                    </div>
+                </div>
+
+                <div class="cv-card">
+                    <h4 class="section-title">İlgi Alanları</h4>
+                    <div class="interest-item"><i class="fas fa-basketball-ball me-2"></i> Basketbol</div>
+                    <div class="interest-item"><i class="fas fa-futbol me-2"></i> Futbol</div>
+                    <div class="interest-item"><i class="fas fa-gamepad me-2"></i> Video Oyunları</div>
+                </div>
+
+                <div class="text-end">
+                    <button class="btn btn-warning btn-lg fw-bold rounded-pill shadow">
+                        RESUME / CV İNDİR (PDF) <i class="fas fa-download ms-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
